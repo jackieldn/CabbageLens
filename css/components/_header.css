@@ -1,0 +1,70 @@
+/* Header css */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.menu-btn, .close-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-btn img, .close-menu-btn img {
+    height: 24px;
+}
+
+/* links */
+
+header .nav-link {
+    color: white; /* Normal state */
+    text-decoration: none;
+}
+
+header .nav-link:visited {
+    color: white; /* Visited state */
+}
+
+header .nav-link:hover {
+    color: lightgreen; /* Hover state */
+}
+
+header .nav-link:active {
+    color: white; /* Active state */
+}
+
+.header-with-button {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-with-button h2 {
+    margin: 0; /* Ensure no extra margin */
+    line-height: 1; /* Adjust line-height if necessary */
+}
