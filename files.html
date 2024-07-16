@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabbageLens - File Browser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/CABBAGE-LENS-LOGO_v1.png" alt="CabbageLens Logo">
+            </div>
+            <button id="menu-btn" class="menu-btn">
+                <img src="assets/menu.svg" alt="Menu">
+            </button>
+            <nav class="nav-links">
+                <a href="tags.html" class="nav-link">Tags</a>
+                <a href="files.html" class="nav-link">Files</a>
+                <a href="index.html">
+                    <button class="add-btn">Add Pictures</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <nav id="side-nav" class="side-nav">
+        <button id="close-menu-btn" class="close-menu-btn">
+            <img src="assets/close.svg" alt="Close Menu">
+        </button>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="files.html" class="nav-link">Files</a>
+        <a href="index.html">
+            <button class="add-btn">Add Pictures</button>
+        </a>
+    </nav>
+    <main>
+        <div class="container">
+            <h2><b>Pictures</b></h2>
+            <a href="#" id="upper-folder-link">← Back to Parent Folder</a>
+            <div id="file-browser">
+                <div class="file-row">
+                    <img src="assets/folder-icon.svg" alt="Folder" class="file-icon">
+                    <div class="file-info">
+                        <span>BROSZK2_CROP16_12-08-24</span>
+                        <span class="timestamp">12/08/2024 - 2.28pm</span>
+                    </div>
+                </div>
+                <div class="file-row">
+                    <img src="assets/folder-icon.svg" alt="Folder" class="file-icon">
+                    <div class="file-info">
+                        <span>BROSZK2_CROP13_12-08-24</span>
+                        <span class="timestamp">12/08/2024 - 2.28pm</span>
+                    </div>
+                </div>
+                <div class="file-row">
+                    <img src="assets/folder-icon.svg" alt="Folder" class="file-icon">
+                    <div class="file-info">
+                        <span>BROSZK2_CROP11_12-08-24</span>
+                        <span class="timestamp">12/08/2024 - 2.28pm</span>
+                    </div>
+                </div>
+                <div class="file-row">
+                    <img src="assets/folder-icon.svg" alt="Folder" class="file-icon">
+                    <div class="file-info">
+                        <span>BROSZK2_CROP10_12-08-24</span>
+                        <span class="timestamp">12/08/2024 - 2.28pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

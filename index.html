@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabbageLens - Add Pictures</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="qr-scanner.umd.min.js" defer></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/CABBAGE-LENS-LOGO_v1.png" alt="CabbageLens Logo">
+            </div>
+            <button id="menu-btn" class="menu-btn">
+                <img src="assets/menu.svg" alt="Menu">
+            </button>
+            <nav class="nav-links">
+                <a href="tags.html" class="nav-link">Tags</a>
+                <a href="files.html" class="nav-link">Files</a>
+                <a href="index.html">
+                    <button class="add-btn">Add Pictures</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <nav id="side-nav" class="side-nav">
+        <button id="close-menu-btn" class="close-menu-btn">
+            <img src="assets/close.svg" alt="Close Menu">
+        </button>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="files.html" class="nav-link">Files</a>
+        <a href="index.html">
+            <button class="add-btn">Add Pictures</button>
+        </a>
+    </nav>
+    <main>
+        <div class="container">
+            <h2><b>Add Picture</b></h2>
+            <form id="add-picture-form">
+                <div class="form-group">
+                    <label for="picture-name"><b>Base file name or scan QR-code</b></label>
+                    <div class="input-group">
+                        <input type="text" id="picture-name" placeholder="Enter name..." class="form-control">
+                        <button type="button" id="qr-btn" class="btn btn-secondary">
+                            <img src="assets/QR-scan.svg" alt="QR Code">
+                        </button>
+                    </div>
+                </div>
+                <div id="qr-reader" style="width: 100%; display: none;">
+                    <video id="qr-video" style="width: 100%;"></video>
+                </div>
+                <div class="image-preview">
+                    <button type="button" id="upload-btn" class="btn btn-secondary">
+                        <img src="assets/activate-camera.svg" alt="Upload">
+                    </button>
+                </div>
+                <div class="form-group">
+                    <label for="crop-tag"><b>Crop tag</b></label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select or create new
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-danger discard-btn">Discard</button>
+                    <button type="submit" class="btn btn-success save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="discard-modal" class="modal">
+        <div class="modal-content">
+            <img src="assets/warning.svg" alt="Warning Icon">
+            <p>Are you sure you want to discard data?</p>
+            <div class="modal-actions">
+                <button id="no-btn" class="btn btn-secondary no-btn">No</button>
+                <button id="delete-btn" class="btn btn-danger delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

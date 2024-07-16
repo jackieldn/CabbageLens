@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags - CabbageLens</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/CABBAGE-LENS-LOGO_v1.png" alt="CabbageLens Logo">
+            </div>
+            <button id="menu-btn" class="menu-btn">
+                <img src="assets/menu.svg" alt="Menu">
+            </button>
+            <nav class="nav-links">
+                <a href="tags.html" class="nav-link">Tags</a>
+                <a href="files.html" class="nav-link">Files</a>
+                <a href="index.html">
+                    <button class="add-btn">Add Pictures</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <nav id="side-nav" class="side-nav">
+        <button id="close-menu-btn" class="close-menu-btn">
+            <img src="assets/close.svg" alt="Close Menu">
+        </button>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="files.html" class="nav-link">Files</a>
+        <a href="index.html">
+            <button class="add-btn">Add Pictures</button>
+        </a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="header-with-button">
+                <h2><b>Crop Tags</b></h2>
+                <button id="add-tag-btn" class="btn btn-success">
+                    <img src="assets/add-icon.svg" alt="Add">
+                </button>
+            </div>
+            <div class="tag-controls">
+                <input type="text" id="search-bar" placeholder="Search" class="form-control">
+            </div>
+            <ul id="tag-list" class="list-group">
+                <!-- Example Tags -->
+                <li class="list-group-item">
+                    <span>BROSZK2</span>
+                    <button class="btn btn-danger btn-sm float-right">✖</button>
+                </li>
+                <li class="list-group-item">
+                    <span>CAU3</span>
+                    <button class="btn btn-danger btn-sm float-right">✖</button>
+                </li>
+                <li class="list-group-item">
+                    <span>WHT3</span>
+                    <button class="btn btn-danger btn-sm float-right">✖</button>
+                </li>
+                <!-- Add more tags here -->
+            </ul>
+        </div>
+    </main>    
+</body>
+</html>
